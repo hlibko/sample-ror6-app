@@ -5,6 +5,14 @@ ruby '2.7.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5'
+
+gem 'mini_magick', '~> 4.11.0'
+gem 'active_storage_validations', '~> 0.9.8'
+gem 'faker', '~> 2.20.0'
+gem 'will_paginate', '~> 3.3.1'
+gem 'bootstrap-will_paginate', '~> 1.0.0'
+gem 'bootstrap-sass', '~> 3.4.1'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -18,10 +26,10 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.17'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -50,15 +58,15 @@ group :test do
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  gem 'rails-controller-testing', '1.0.5'
-  gem 'minitest', '5.15.0'
-  gem 'minitest-reporters', '1.5.0'
-  gem 'guard', '2.18.0'
-  gem 'guard-minitest', '2.4.6'
+  gem 'rails-controller-testing', '~> 1.0.5'
+  gem 'minitest', '~> 5.15.0'
+  gem 'minitest-reporters', '~> 1.5.0'
+  gem 'guard', '~> 2.18.0'
+  gem 'guard-minitest', '~> 2.4.6'
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 1.3.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
